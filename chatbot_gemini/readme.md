@@ -12,6 +12,21 @@ conda activate rag_demo
 pip install --no-deps -r requirements.txt
 ```
 
+PS: If you get an error message when starting the app that is similar to this:
+
+```
+libcublas.so.*[0-9] not found in the system path
+```
+
+Run this command to fix the issue:
+
+```bash
+pip install "transformers[torch]"
+```
+
+
+&nbsp;
+
 Next, edit the `config.ini` file and set the Redis connection string, as well as the Google API Key.
 
 The database you want to use for the demo needs to have JSON and Search enabled.
