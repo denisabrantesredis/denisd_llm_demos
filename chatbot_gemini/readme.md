@@ -5,11 +5,11 @@
 Create a new environment for the demo (recommended) and install the pre-req packages.
 
 ```python
-conda create -y --name rag_demo python=3.9
+conda create -y --name rag_demo python=3.12
 
 conda activate rag_demo
 
-pip install -r requirements.txt
+pip install --no-deps -r requirements.txt
 ```
 
 Next, edit the `config.ini` file and set the Redis connection string, as well as the Google API Key.
