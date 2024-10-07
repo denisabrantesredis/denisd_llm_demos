@@ -1,5 +1,11 @@
 ## LLM Demo
 
+
+![alt text][redis_llm_demo]
+
+[redis_llm_demo]: ./images/redis_llm_demo.png "LLM Demo"
+
+
 ### Setup
 
 Create a new environment for the demo (recommended) and install the pre-req packages.
