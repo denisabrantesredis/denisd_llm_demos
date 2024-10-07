@@ -1,10 +1,20 @@
 ## LLM Demo
 
+Vector DB & Semantic Cache demo:
 
 ![alt text][redis_llm_demo]
 
-[redis_llm_demo]: ./images/redis_llm_demo.png "LLM Demo"
+[redis_llm_demo]: ./images/redis_llm_demo.png "RAG & Semantic Cache Demo"
 
+
+LLM Memory Demo:
+
+![alt text][redis_llm_demo2]
+
+[redis_llm_demo2]: ./images/redis_llm_demo2.png "LLM Memory Demo"
+
+
+&nbsp;
 
 ### Setup
 
