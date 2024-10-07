@@ -1,0 +1,11 @@
+redis==5.0.8
+redisvl==0.3.3
+streamlit==1.38.0
+streamlit-extras==0.4.7
+langchain==0.2.16
+langchain-huggingface==0.0.3
+langchain-redis==0.0.4
+langchain-community==0.2.16
+langchain-google-genai==2.0.0
+unstructured==0.15.10
+"unstructured[pdf]"
