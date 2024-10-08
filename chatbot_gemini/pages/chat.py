@@ -24,7 +24,6 @@ if "GOOGLE_API_KEY" not in os.environ:
 
 # Initialize RedisChatMessageHistory
 user_session = "default"
-message_history = RedisChatMessageHistory(user_session, redis_url=REDIS_URL)
 
 llm = ChatGoogleGenerativeAI(
     model="gemini-1.5-pro",
@@ -45,7 +44,7 @@ chain = prompt | llm
 
 # Function to get or create a RedisChatMessageHistory instance
 def get_redis_history(session_id: str):
-    return RedisChatMessageHistory(session_id, redis_url=REDIS_URL)
+    return RedisChatMessageHistory(session_id, redis_url=REDIS_URL, ttl=3600)
 
 # Create a runnable with message history
 chain_with_history = RunnableWithMessageHistory(

@@ -137,9 +137,9 @@ def load_vector_store():
 def load_chat_model(use_cache):
 
     if use_cache == "Use Cache":
-        redis_cache = RedisCache(redis_url=REDIS_URL)
+        redis_cache = RedisCache(redis_url=REDIS_URL, ttl=3600)
     else:
-        redis_cache = RedisSemanticCache(redis_url=REDIS_URL, embeddings=embeddings, distance_threshold=0.2)
+        redis_cache = RedisSemanticCache(redis_url=REDIS_URL, embeddings=embeddings, distance_threshold=0.2, ttl=3600)
 
     set_llm_cache(redis_cache)
 

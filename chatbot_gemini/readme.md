@@ -92,6 +92,13 @@ Some details about this app:
 
 - The app is configured to delete all documents with the `"idx:*"` key prefix every time the page is refreshed. This makes it simpler to test and redo the demo, etc. You can change this behavior by commenting line 167 on the [gui.py](./gui.py) file, if you want to preserve these documents across different demos.
 
+- There is a default TTL (time-to-live) set for the cache, semantic cache and conversation history cache. The duration is 1 hour, which should cover your demo session. To modify this value, change the files listed below. You can also remove the `ttl` parameter from the function call to make the cache documents permanent.
+    - [gui.py](./gui.py), line 140:
+
+    - [gui.py](./gui.py), line 142:
+
+    - [pages/chat.py](./pages/chat.py), line 47:
+
 
 &nbsp;
 ## Demo Flow
